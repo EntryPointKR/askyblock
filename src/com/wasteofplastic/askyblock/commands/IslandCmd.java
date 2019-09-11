@@ -1572,8 +1572,7 @@ public class IslandCmd implements CommandExecutor, TabCompleter {
                     }
                 }
                 if (VaultHelper.checkPerm(player, Settings.PERMPREFIX + "island.info")) {
-                    Util.sendMessage(player, plugin.myLocale(player.getUniqueId()).helpColor + "/" + label + " level: " + ChatColor.WHITE + plugin.myLocale(player.getUniqueId()).islandhelpLevel);
-                    Util.sendMessage(player, plugin.myLocale(player.getUniqueId()).helpColor + "/" + label + " level <player>: " + ChatColor.WHITE + plugin.myLocale(player.getUniqueId()).islandhelpLevelPlayer);
+                    Util.sendMessage(player, plugin.myLocale(player.getUniqueId()).helpColor + "/" + label + " level [player]: " + ChatColor.WHITE + plugin.myLocale(player.getUniqueId()).islandhelpLevel);
                 }
                 if (VaultHelper.checkPerm(player, Settings.PERMPREFIX + "island.name")
                         && plugin.getPlayers().hasIsland(playerUUID)) {
